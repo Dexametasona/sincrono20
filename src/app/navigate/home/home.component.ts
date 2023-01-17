@@ -10,9 +10,9 @@ export class HomeComponent implements OnInit {
   datos!:any[]
   constructor(private data:DataService) { }
 
-  ngOnInit(): void {
+  mostrar(){
     this.data.getData().subscribe(x=>this.datos=x)
-    console.log(this.datos)
   }
-
+  ngOnInit(): void {
+  }
 }

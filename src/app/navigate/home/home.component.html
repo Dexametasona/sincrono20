@@ -1,3 +1,12 @@
-<ul *ngFor="let x of datos">
-  <li>{{x.name}}</li>
-</ul>
+<!-- lista de datos------------------------------ -->
+<div class="w-1/3 mx-auto border-2 rounded-lg pb-3">
+  <h1 class="text-4xl font-bold text-center my-3">API consumida</h1>
+  <br>
+  <br>
+  <div>
+    <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" (click)="mostrar()">Interceptar Petición</button>
+  </div>
+  <ul *ngFor="let x of datos" class="list-disc text-xl pl-8">
+    <li>{{x.name}}</li>
+  </ul>
+</div>
